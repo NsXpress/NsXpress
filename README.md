@@ -23,7 +23,7 @@ Og meget, meget mere.
 1. Klon repositoriet ved hjælp af git:
 
 ```bash
-git clone https://github.com/Team-Tea-Time/laravel-forum.git
+git clone https://github.com/NsXpress/NsXpress.git
 ```
 
 2. .ENV

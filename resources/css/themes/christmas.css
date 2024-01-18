@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600&display=swap');
+
+body {
+    background-color: #b91c1c;
+    background-image: url("https://www.transparenttextures.com/patterns/light-gray.png");
+}
+
+.header-background {
+    background-color: rgba(127, 29, 29, 0.9);
+    background-image: none;
+}
+
+#logo {
+    color: #4ade80;
+    font-family: 'Fredoka', sans-serif;
+    font-weight: bold;
+}
+
+footer, footer a {
+    color: #f1f5f9 !important;
+}
+
+.bg-blue-600 {
+    background: #4ade80 !important;
+}
+
+@-webkit-keyframes snow {
+    0% { background-position: 0px 0px, 0px 0px, 0px 0px }
+    50% { background-color: #b91c1c }
+    100% {
+        background-position: 500px 1000px, 400px 400px, 300px 300px;
+        background-color: #b91c1c;
+    }
+}
+@-moz-keyframes snow {
+    0% { background-position: 0px 0px, 0px 0px, 0px 0px }
+    50% { background-color: #b91c1c }
+    100% {
+        background-position: 500px 1000px, 400px 400px, 300px 300px;
+        background-color: #b91c1c;
+    }
+}
+@-ms-keyframes snow {
+    0% { background-position: 0px 0px, 0px 0px, 0px 0px }
+    50% { background-color: #b91c1c }
+    100% {
+        background-position: 500px 1000px, 400px 400px, 300px 300px;
+        background-color: #b91c1c;
+    }
+}
+@keyframes snow {
+    0% { background-position: 0px 0px, 0px 0px, 0px 0px }
+    50% { background-color: #b91c1c }
+    100% {
+        background-position: 500px 1000px, 400px 400px, 300px 300px;
+        background-color: #b91c1c;
+    }
+}
+#snow {
+    background-image: url('https://i.imgur.com/BiSmXaq.png'), url('https://i.imgur.com/XHuy0NJ.png'), url('https://i.imgur.com/okpRxJU.png');
+    -webkit-animation: snow 20s linear infinite;
+    -moz-animation: snow 20s linear infinite;
+    -ms-animation: snow 20s linear infinite;
+    animation: snow 20s linear infinite;
+    position: absolute;
+    height: 100vh;
+    width: 100%
+}
+
+main::before {
+    --overflow-x: 4px;
+    --snow-image: url('https://assets.codepen.io/4175254/snow-cap-test-2.png');
+    content: '';
+    position: absolute;
+    top: -6px;
+    left: calc(var(--overflow-x) * -1);
+    border-image-source: var(--snow-image);
+    border-image-slice: calc(6 * 56 / 20) fill;
+    border-image-width: calc(28px / 3);
+    border-image-repeat: round;
+    width: calc(100% + var(--overflow-x) * 2);
+    height: 28px;
+    filter: drop-shadow(0 2px 1px rgb(0 0 0 / .25));
+    opacity: 1;
+}

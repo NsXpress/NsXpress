@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Zilla+Slab:wght@700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import 'markdown';
+@import 'card';
+
+[x-cloak] {
+    display: none !important;
+}
+
+body {
+    background: #d8eaf9 url("/images/footer-line.png") bottom left fixed repeat-x;
+}
+
+.link {
+    @apply text-blue-600 hover:text-blue-700 underline underline-offset-2 transition-all duration-200;
+}
+
+.logo-shadow {
+    text-shadow: 0 1px 0 #ccc, 
+               0 2px 0 #c9c9c9,
+               0 3px 0 #bbb,
+               0 4px 0 #b9b9b9,
+               0 5px 0 #aaa,
+               0 6px 1px rgba(0,0,0,.1),
+               0 0 5px rgba(0,0,0,.1),
+               0 1px 3px rgba(0,0,0,.3),
+               0 3px 5px rgba(0,0,0,.2),
+               0 5px 10px rgba(0,0,0,.25);
+}
+
+main::before {
+    background-image: url("/images/top-avatars.png");
+    background-repeat: no-repeat;
+    height: 54px;
+    width: 100%;
+    content: '';
+    position: absolute;
+    top: -55px;
+    z-index: -1;
+}

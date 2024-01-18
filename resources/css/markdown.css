@@ -1,0 +1,19 @@
+.markdown-content h1, .markdown-content h2, .markdown-content h3, .markdown-content h4 {
+    @apply font-bold leading-tight tracking-tighter mb-4 text-zinc-900;
+}
+
+.markdown-content h1 {
+    @apply text-3xl;
+}
+
+.markdown-content h2 {
+    @apply text-2xl;
+}
+
+.markdown-content h3 {
+    @apply text-xl;
+}
+
+.markdown-content p {
+    @apply mb-4 text-zinc-600 text-sm leading-relaxed;
+}

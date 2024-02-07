@@ -1,6 +1,8 @@
 # NsXpress Dokumentation
 
-Velkommen til den officielle dokumentation for NsXpress, den mest brugervenlige og intuitive avisplatform til Netstation fan-sider. Dette system giver dig mulighed for at administrere forskellige aspekter af din fanside problemfrit.
+Velkommen til den officielle dokumentation for NsXpress, den mest brugervenlige og intuitive avisplatform til Netstation fan-sider.
+
+Dette system giver dig mulighed for at administrere forskellige aspekter af din fanside problemfrit.
 
 Udforsk funktionerne nedenfor:
 
@@ -15,8 +17,14 @@ Udforsk funktionerne nedenfor:
 
 Og meget, meget mere.
 
-> [!Krav] 
+## Krav
 > PHP >= 8.1 & Grundlæggende kendskab til Laravel
+
+## Licens
+
+NsXpress er open-source-software licenseret under MIT-licensen.
+
+For at få tilladelse til at bruge dette system frit og gøre det tilgængeligt, er det afgørende at opretholde linket og teksten vedrørende NsXpress OS i hjemmesidens footer. Dette krav er ufravigeligt og må ikke fjernes.
 
 ## Installation
 

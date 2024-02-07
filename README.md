@@ -1,5 +1,7 @@
 # NsXpress Dokumentation
 
+![NsXpress](https://i.imgur.com/w38D3Jk.png)
+
 Velkommen til den officielle dokumentation for NsXpress, den mest brugervenlige og intuitive avisplatform til Netstation fan-sider.
 
 Dette system giver dig mulighed for at administrere forskellige aspekter af din fanside problemfrit.

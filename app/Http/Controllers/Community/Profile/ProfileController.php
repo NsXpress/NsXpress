@@ -23,7 +23,10 @@ class ProfileController extends Controller
 
     public function update(Request $request): View
     {
-        (new UpdateUserProfileInformation())->update(Auth::user(), $request->toArray());
+        $userData = $request->toArray();
+        $userData['content'] = strip_tags($userData['content']);
+
+        (new UpdateUserProfileInformation())->update(Auth::user(), $userData);
 
         session()->flash('success', 'Din profil er blevet opdateret.');
 

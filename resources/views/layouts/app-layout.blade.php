@@ -82,8 +82,11 @@
                 </main>
 
                 <footer class="py-4 text-xs shadow-[0 1px 0 rgba(0,0,0,.25)] text-zinc-800 flex justify-between">
-                    <div>
+                    <div class="flex flex-col">
                         <p>© @php echo date('Y'); @endphp {{ config('app.name', 'Laravel') }}. Alle rettigheder forbeholdes.</p>
+
+                        <!-- OBS; Denne linje må IKKE fjernes! -->
+                        <a href="https://github.com/NsXpress/NsXpress" class="shadow-[0 1px 0 rgba(0,0,0,.25)] text-zinc-800 block mt-1">Baseret på NsXpress OS</a>
                     </div>
 
                     <div class="text-right">

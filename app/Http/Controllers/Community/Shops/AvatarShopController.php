@@ -24,6 +24,12 @@ class AvatarShopController extends Controller
     {
         $user = Auth::user();
 
+        if (!$avatar->is_public) {
+            session()->flash('error', 'Denne figur er ikke for offentligheden.');
+
+            return redirect()->route('pages.community.shops.avatars');
+        }
+
         if ($user->coins < $avatar->price) {
             session()->flash('error', 'Du har ikke råd til den figur.');
 
